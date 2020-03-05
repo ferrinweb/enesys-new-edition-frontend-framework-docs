@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Filter Bar 筛选器 | ENESYS 业务系统前端框架</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.3.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ENESYS-frontend-docs/logo-icon.png">
+    
+    <link rel="preload" href="/ENESYS-frontend-docs/assets/css/0.styles.735c2c07.css" as="style"><link rel="preload" href="/ENESYS-frontend-docs/assets/js/app.26a65fd1.js" as="script"><link rel="preload" href="/ENESYS-frontend-docs/assets/js/2.5d7cd4a7.js" as="script"><link rel="preload" href="/ENESYS-frontend-docs/assets/js/12.e3c175aa.js" as="script"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/10.d98222b6.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/11.8231723b.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/13.fa2d5dad.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/14.52c29f44.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/15.84a65069.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/16.0f21bfaf.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/17.8c67e9f7.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/18.bc6029c8.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/19.376cf27e.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/20.1c6555c2.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/21.773339d0.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/22.d773d2a4.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/23.df5e9625.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/24.10f783a7.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/25.c0d9368b.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/26.a102bcbd.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/27.cb772283.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/28.53fd43c2.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/29.321bc623.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/3.f6878970.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/30.a4cd59be.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/31.dae298da.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/32.e03d0b92.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/33.bb0bd83c.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/34.ad434875.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/4.c58db810.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/5.0e7f8131.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/6.5fd718c0.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/7.2525c330.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/8.8f36d816.js"><link rel="prefetch" href="/ENESYS-frontend-docs/assets/js/9.90361ba1.js">
+    <link rel="stylesheet" href="/ENESYS-frontend-docs/assets/css/0.styles.735c2c07.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/ENESYS-frontend-docs/" class="home-link router-link-active"><img src="/ENESYS-frontend-docs/logo-icon.png" alt="ENESYS 业务系统前端框架" class="logo"> <span class="site-name can-hide">ENESYS 业务系统前端框架</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/ENESYS-frontend-docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/ENESYS-frontend-docs/start/" class="nav-link">
+  起步
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组件" class="dropdown-title"><span class="title">组件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          容器组件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ENESYS-frontend-docs/components/page.html" class="nav-link">
+  Page
+</a></li><li class="dropdown-subitem"><a href="/ENESYS-frontend-docs/components/panel.html" class="nav-link">
+  Panel
+</a></li><li class="dropdown-subitem"><a href="/ENESYS-frontend-docs/components/panel-tabs.html" class="nav-link">
+  Panel Tabs
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据组件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ENESYS-frontend-docs/components/common-table/" class="nav-link">
+  Common Table
+</a></li><li class="dropdown-subitem"><a href="/ENESYS-frontend-docs/components/common-form/" class="nav-link">
+  Common Form
+</a></li></ul></li><li class="dropdown-item"><h4>
+          辅助组件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ENESYS-frontend-docs/components/filter-bar.html" class="nav-link router-link-exact-active router-link-active">
+  Filter Bar
+</a></li><li class="dropdown-subitem"><a href="/ENESYS-frontend-docs/components/action-toolbar.html" class="nav-link">
+  Action Toolbar
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/ENESYS-frontend-docs/router/" class="nav-link">
+  路由
+</a></div><div class="nav-item"><a href="/ENESYS-frontend-docs/api/" class="nav-link">
+  接口
+</a></div><div class="nav-item"><a href="/ENESYS-frontend-docs/formatter/" class="nav-link">
+  数据格式化
+</a></div><div class="nav-item"><a href="/ENESYS-frontend-docs/helper-css/" class="nav-link">
+  预设样式
+</a></div><div class="nav-item"><a href="/ENESYS-frontend-docs/feedback/" class="nav-link">
+  反馈
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/ENESYS-frontend-docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/ENESYS-frontend-docs/start/" class="nav-link">
+  起步
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组件" class="dropdown-title"><span class="title">组件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          容器组件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ENESYS-frontend-docs/components/page.html" class="nav-link">
+  Page
+</a></li><li class="dropdown-subitem"><a href="/ENESYS-frontend-docs/components/panel.html" class="nav-link">
+  Panel
+</a></li><li class="dropdown-subitem"><a href="/ENESYS-frontend-docs/components/panel-tabs.html" class="nav-link">
+  Panel Tabs
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据组件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ENESYS-frontend-docs/components/common-table/" class="nav-link">
+  Common Table
+</a></li><li class="dropdown-subitem"><a href="/ENESYS-frontend-docs/components/common-form/" class="nav-link">
+  Common Form
+</a></li></ul></li><li class="dropdown-item"><h4>
+          辅助组件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ENESYS-frontend-docs/components/filter-bar.html" class="nav-link router-link-exact-active router-link-active">
+  Filter Bar
+</a></li><li class="dropdown-subitem"><a href="/ENESYS-frontend-docs/components/action-toolbar.html" class="nav-link">
+  Action Toolbar
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/ENESYS-frontend-docs/router/" class="nav-link">
+  路由
+</a></div><div class="nav-item"><a href="/ENESYS-frontend-docs/api/" class="nav-link">
+  接口
+</a></div><div class="nav-item"><a href="/ENESYS-frontend-docs/formatter/" class="nav-link">
+  数据格式化
+</a></div><div class="nav-item"><a href="/ENESYS-frontend-docs/helper-css/" class="nav-link">
+  预设样式
+</a></div><div class="nav-item"><a href="/ENESYS-frontend-docs/feedback/" class="nav-link">
+  反馈
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Page</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Panel</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Panel Tabs</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Common Table</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Common Form</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Filter Bar</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ENESYS-frontend-docs/components/filter-bar.html" class="active sidebar-link">Filter Bar 筛选器</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ENESYS-frontend-docs/components/filter-bar.html#如何引入" class="sidebar-link">如何引入</a></li><li class="sidebar-sub-header"><a href="/ENESYS-frontend-docs/components/filter-bar.html#使用示例" class="sidebar-link">使用示例</a></li><li class="sidebar-sub-header"><a href="/ENESYS-frontend-docs/components/filter-bar.html#属性" class="sidebar-link">属性</a></li><li class="sidebar-sub-header"><a href="/ENESYS-frontend-docs/components/filter-bar.html#事件" class="sidebar-link">事件</a></li><li class="sidebar-sub-header"><a href="/ENESYS-frontend-docs/components/filter-bar.html#详细配置" class="sidebar-link">详细配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ENESYS-frontend-docs/components/filter-bar.html#预设筛选字段" class="sidebar-link">预设筛选字段</a></li><li class="sidebar-sub-header"><a href="/ENESYS-frontend-docs/components/filter-bar.html#自定义筛选字段属性说明" class="sidebar-link">自定义筛选字段属性说明</a></li></ul></li><li class="sidebar-sub-header"><a href="/ENESYS-frontend-docs/components/filter-bar.html#筛选工具条外观配置" class="sidebar-link">筛选工具条外观配置</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Action Toolbar</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="filter-bar-筛选器"><a href="#filter-bar-筛选器" class="header-anchor">#</a> Filter Bar 筛选器</h1> <p>筛选器用于列表筛选。目前已内置在<a href="/ENESYS-frontend-docs/components/common-table/">通用列表</a>组件内。即，目前无需自行引入。如需在其他组件内引入，参考<a href="#%E5%A6%82%E4%BD%95%E5%BC%95%E5%85%A5">如何引入</a>。</p> <p><img src="data:image/png;base64,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" alt=""></p> <h2 id="如何引入"><a href="#如何引入" class="header-anchor">#</a> 如何引入</h2> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">import</span> filterBar <span class="token keyword">from</span> <span class="token string">'@/components/filter-bar'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span>
+    filterBar
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token operator">...</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="使用示例"><a href="#使用示例" class="header-anchor">#</a> 使用示例</h2> <blockquote><p>你可以直接复制使用此处代码</p></blockquote> <div class="language-html line-numbers-mode"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>filter-bar</span>
+  <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>params<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">:filters</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>filters<span class="token punctuation">&quot;</span></span><span class="token attr-name">,</span>
+  <span class="token attr-name">col</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>1<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">extraCol</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>3<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>200<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>filter-bar</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      params<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token comment">// 可以传入预置筛选字段的键值、或自定义筛选字段</span>
+      filters<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'meterNo'</span><span class="token punctuation">,</span> <span class="token string">'meterType'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        label<span class="token operator">:</span> <span class="token string">'安装日期'</span><span class="token punctuation">,</span>
+        field<span class="token operator">:</span> <span class="token string">'installDate'</span><span class="token punctuation">,</span>
+        type<span class="token operator">:</span> <span class="token string">'datepicker'</span><span class="token punctuation">,</span>
+        innerType<span class="token operator">:</span> <span class="token string">'date'</span><span class="token punctuation">,</span>
+        value<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+        style<span class="token operator">:</span> <span class="token string">'width: 150px;'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><h2 id="属性"><a href="#属性" class="header-anchor">#</a> 属性</h2> <table><thead><tr><th>属性名称</th> <th>属性说明</th> <th>默认值</th></tr></thead> <tbody><tr><td>filters</td> <td>[Array] 筛选字段配置<br>具体配置参见 <a href="#%E8%AF%A6%E7%BB%86%E9%85%8D%E7%BD%AE">filters 配置</a></td> <td>无</td></tr> <tr><td>value</td> <td>[Object] 默认参数输入<br>用于 v-model 双向绑定，无需单独使用<br>通过该参数可以设置默认筛选值</td> <td>无</td></tr></tbody></table> <div class="custom-block tip"><p class="custom-block-title">外观配置参数</p> <p>此外，筛选工具条支持基础外观配置，参考本节下方<a href="#%E7%AD%9B%E9%80%89%E5%B7%A5%E5%85%B7%E6%9D%A1%E5%A4%96%E8%A7%82%E9%85%8D%E7%BD%AE">筛选工具条外观配置</a></p></div> <h2 id="事件"><a href="#事件" class="header-anchor">#</a> 事件</h2> <table><thead><tr><th>事件名称</th> <th>事件说明</th></tr></thead> <tbody><tr><td>input</td> <td>组件内筛选参数更新时，将抛出该事件，并携带更新后筛选参数数据<br>用于 <code>v-model</code> 双向绑定，无需单独使用</td></tr> <tr><td>change</td> <td>组件内筛选参数更新时，将抛出该事件，并携带更新后筛选参数数据<br>该事件将在 <code>input</code> 事件之后抛出</td></tr></tbody></table> <h2 id="详细配置"><a href="#详细配置" class="header-anchor">#</a> 详细配置</h2> <p>该组件内置了多个预设筛选字段配置，传入时即可通过预设关键字使用预设筛选条件。</p> <h3 id="预设筛选字段"><a href="#预设筛选字段" class="header-anchor">#</a> 预设筛选字段</h3> <p>预设筛选字段为内置字段，开发者可以新增或修改预设字段，但务必同步更新该文档页面。</p> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>不建议修改预置字段，有可能影响其他使用了筛选组件的页面功能。如需修改请先进行细致的分析并咨询前端开发人员。</p></div> <p>预设筛选字段和自定义筛选字段的配置参数完全一致。</p> <table><thead><tr><th>关键字</th> <th>说明</th></tr></thead> <tbody><tr><td>meterNo</td> <td>表具编号</td></tr> <tr><td>meterType</td> <td>表具类型</td></tr> <tr><td>meterStatus</td> <td>表具状态</td></tr> <tr><td>installDate</td> <td>安装日期</td></tr> <tr><td>custName</td> <td>客户名称</td></tr> <tr><td>custNo</td> <td>客户编号</td></tr> <tr><td>custStatus</td> <td>客户状态</td></tr> <tr><td>addrDes</td> <td>地址描述</td></tr> <tr><td>custType</td> <td>客户类型</td></tr></tbody></table> <blockquote><p>各关键字详细配置请查看 <code>src/components/filter-bar/filters.json</code></p></blockquote> <h3 id="自定义筛选字段属性说明"><a href="#自定义筛选字段属性说明" class="header-anchor">#</a> 自定义筛选字段属性说明</h3> <table><thead><tr><th>属性名</th> <th>属性说明</th> <th>默认值</th></tr></thead> <tbody><tr><td>label</td> <td>[String] 字段描述</td> <td>无</td></tr> <tr><td>field</td> <td>[String] 字段名称</td> <td>无</td></tr> <tr><td>type</td> <td>[String] 输入类型<br>可选值<br>input/select/checkbox/radio/datepicker/timepicker/cascader</td> <td>input</td></tr> <tr><td>innerType</td> <td>[String] 内部类型<br>对应 element-ui 相应组件的 type 属性配置</td> <td>无</td></tr> <tr><td>value</td> <td>[String|Number|Boolean|Array|Object] 字段默认值<br>如果选单值是基本类型，应设置为空字符串<br>如果选单值是数组，应设置为 []</td> <td>无</td></tr> <tr><td>options</td> <td>[Array] 为 type 值为 select/checkbox/radio/cascader 的字段<br>设置候选值</td> <td>无</td></tr> <tr><td>className</td> <td>[String] 自定义样式名</td> <td>无</td></tr> <tr><td>style</td> <td>[String] 自定义内嵌样式</td> <td>无</td></tr> <tr><td>clearable</td> <td>[Boolean] 显示清空按钮</td> <td>true</td></tr> <tr><td>disabled</td> <td>[Boolean] 是否禁用</td> <td>false</td></tr> <tr><td>autofocus</td> <td>[Boolean] 是否自动获取焦点</td> <td>false</td></tr> <tr><td>readonly</td> <td>[Boolean] 是否只读</td> <td>false</td></tr> <tr><td>multiple</td> <td>[Boolean] 是否多选<br>type 值为 select 时有效</td> <td>false</td></tr> <tr><td>filterable</td> <td>[Boolean] 是否可筛选<br>type 值为 select 时有效</td> <td>false</td></tr> <tr><td>filter-method</td> <td>[function] 自定义选项筛选方法<br>type 值为 select 时有效</td> <td>无</td></tr> <tr><td>extra</td> <td>[Boolean] 是否标记为额外字段<br>值为 true，该字段将被折叠，仅当点击展开按钮时可见，以实现高级筛选功能。同时，开发者可以通过添加 <code>%extra</code> 后缀来将预设字段设置为额外字段，例：<code>meterNo%extra</code></td> <td>false</td></tr> <tr><td>...</td> <td>其他设置属性，参考 element-ui 表单相关属性设置</td> <td>无</td></tr></tbody></table> <h2 id="筛选工具条外观配置"><a href="#筛选工具条外观配置" class="header-anchor">#</a> 筛选工具条外观配置</h2> <p>筛选工具条配置用于控制筛选条的尺寸、表单列数、是否显示文本标签等外观属性。</p> <table><thead><tr><th>属性名</th> <th>属性说明</th> <th>默认值</th></tr></thead> <tbody><tr><td>col</td> <td>[Number, String] 主查询条件表单列数</td> <td>1</td></tr> <tr><td>extraCol</td> <td>[Number, String] 辅助查询条件表单列数</td> <td>2</td></tr> <tr><td>showLabel</td> <td>[Boolean] 主查询条件是否显示文本标签</td> <td>false</td></tr> <tr><td>extraShowLabel</td> <td>[Boolean] 辅助查询条件是否显示文本标签</td> <td>true</td></tr> <tr><td>width</td> <td>[Number, String] 主查询条件表单宽度，单位像素</td> <td>200</td></tr> <tr><td>extraWidth</td> <td>[Number, String] 辅助查询条件弹窗宽度，单位像素</td> <td>490</td></tr></tbody></table></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">12/31/2019, 10:43:26 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/ENESYS-frontend-docs/components/common-form/slots.html" class="prev">
+        表单插槽
+      </a></span> <span class="next"><a href="/ENESYS-frontend-docs/components/action-toolbar.html">
+        Action Toolbar 操作工具条
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/ENESYS-frontend-docs/assets/js/app.26a65fd1.js" defer></script><script src="/ENESYS-frontend-docs/assets/js/2.5d7cd4a7.js" defer></script><script src="/ENESYS-frontend-docs/assets/js/12.e3c175aa.js" defer></script>
+  </body>
+</html>
