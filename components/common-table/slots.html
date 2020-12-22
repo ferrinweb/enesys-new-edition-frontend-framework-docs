@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Slots 列表插槽 | 中后台系统前端开发框架</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/enesys-new-edition-frontend-framework-docs/logo-icon.png">
+  <link rel="manifest" href="/enesys-new-edition-frontend-framework-docs/manifest.json">
+  <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="/enesys-new-edition-frontend-framework-docs/icons/icon-192.png">
+  <meta name="msapplication-TileImage" content="/icons/icon-144.png">
+  <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/enesys-new-edition-frontend-framework-docs/assets/css/0.styles.eb41f91a.css" as="style"><link rel="preload" href="/enesys-new-edition-frontend-framework-docs/assets/js/app.24852fbb.js" as="script"><link rel="preload" href="/enesys-new-edition-frontend-framework-docs/assets/js/2.022026a0.js" as="script"><link rel="preload" href="/enesys-new-edition-frontend-framework-docs/assets/js/26.72ed7931.js" as="script"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/10.891a4cfb.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/11.378567a1.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/12.eeb4a6bc.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/13.d2d021ca.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/14.15744202.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/15.a4e0ec98.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/16.dd9ca7ea.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/17.eeae724f.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/18.0c0db668.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/19.0454a679.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/20.447be1cb.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/21.b4ad60cf.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/22.5d45af9c.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/23.9b76f8f7.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/24.f77a1050.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/25.bb3a21a5.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/27.83a3464c.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/28.018109b0.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/29.8c4ef89a.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/3.21a3e89b.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/30.2615f14e.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/31.20b88b5a.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/32.fd98419b.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/33.171ac303.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/34.e728a315.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/4.51b7dcd2.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/5.c6b2fa09.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/6.34196948.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/7.6cf44381.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/8.2038f433.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/9.da7bffb1.js">
+    <link rel="stylesheet" href="/enesys-new-edition-frontend-framework-docs/assets/css/0.styles.eb41f91a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/enesys-new-edition-frontend-framework-docs/" class="home-link router-link-active"><img src="/enesys-new-edition-frontend-framework-docs/logo-icon.png" alt="中后台系统前端开发框架" class="logo"> <span class="site-name can-hide">中后台系统前端开发框架</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/start/" class="nav-link">
+  起步
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组件" class="dropdown-title"><span class="title">组件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          容器组件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/page.html" class="nav-link">
+  Page
+</a></li><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/panel.html" class="nav-link">
+  Panel
+</a></li><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/panel-tabs.html" class="nav-link">
+  Panel Tabs
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据组件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/" class="nav-link router-link-active">
+  Common Table
+</a></li><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/common-form/" class="nav-link">
+  Common Form
+</a></li></ul></li><li class="dropdown-item"><h4>
+          辅助组件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/filter-bar.html" class="nav-link">
+  Filter Bar
+</a></li><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/action-toolbar.html" class="nav-link">
+  Action Toolbar
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/router/" class="nav-link">
+  路由
+</a></div><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/api/" class="nav-link">
+  接口
+</a></div><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/formatter/" class="nav-link">
+  数据格式化
+</a></div><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/helper-css/" class="nav-link">
+  预设样式
+</a></div><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/feedback/" class="nav-link">
+  反馈
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/start/" class="nav-link">
+  起步
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组件" class="dropdown-title"><span class="title">组件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          容器组件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/page.html" class="nav-link">
+  Page
+</a></li><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/panel.html" class="nav-link">
+  Panel
+</a></li><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/panel-tabs.html" class="nav-link">
+  Panel Tabs
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据组件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/" class="nav-link router-link-active">
+  Common Table
+</a></li><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/common-form/" class="nav-link">
+  Common Form
+</a></li></ul></li><li class="dropdown-item"><h4>
+          辅助组件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/filter-bar.html" class="nav-link">
+  Filter Bar
+</a></li><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/action-toolbar.html" class="nav-link">
+  Action Toolbar
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/router/" class="nav-link">
+  路由
+</a></div><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/api/" class="nav-link">
+  接口
+</a></div><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/formatter/" class="nav-link">
+  数据格式化
+</a></div><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/helper-css/" class="nav-link">
+  预设样式
+</a></div><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/feedback/" class="nav-link">
+  反馈
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Page</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Panel</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Panel Tabs</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Common Table</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/" class="sidebar-link">Common Table 通用列表</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/#如何引入" class="sidebar-link">如何引入</a></li><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/#使用示例" class="sidebar-link">使用示例</a></li><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/#属性" class="sidebar-link">属性</a></li><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/#事件" class="sidebar-link">事件</a></li><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/#方法" class="sidebar-link">方法</a></li><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/#page-设置" class="sidebar-link">page 设置</a></li><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/#tablesetting-设置" class="sidebar-link">tableSetting 设置</a></li></ul></li><li><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/columns.html" class="sidebar-link">字段配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/columns.html#字段-format-配置" class="sidebar-link">字段 format 配置</a></li><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/columns.html#行展开配置" class="sidebar-link">行展开配置</a></li></ul></li><li><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/edit.html" class="sidebar-link">列表编辑</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/edit.html#示例" class="sidebar-link">示例</a></li><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/edit.html#属性" class="sidebar-link">属性</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/edit.html#更新模式" class="sidebar-link">更新模式</a></li><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/edit.html#新增模式" class="sidebar-link">新增模式</a></li><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/edit.html#作废模式" class="sidebar-link">作废模式</a></li></ul></li><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/edit.html#事件" class="sidebar-link">事件</a></li></ul></li><li><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/slots.html" class="active sidebar-link">列表插槽</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Common Form</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Filter Bar</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Action Toolbar</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="slots-列表插槽"><a href="#slots-列表插槽" class="header-anchor">#</a> Slots 列表插槽</h1> <table><thead><tr><th>插槽名称</th> <th>插槽说明</th> <th>携带数据</th> <th>默认内容</th></tr></thead> <tbody><tr><td>filter-left</td> <td>组件内嵌筛选条左侧</td> <td>form<br>列表筛选配置</td> <td>无</td></tr> <tr><td>filter-right</td> <td>组件内嵌筛选条右侧</td> <td>form<br>列表筛选配置</td> <td>无</td></tr> <tr><td>{field}-cell-prefix</td> <td>列表单元格前缀</td> <td>column<br>当前列配置参数<br>row<br>当前行所有数据<br>cell<br>当前单元格数据<br>$index<br>当前行索引</td> <td>column.prefix</td></tr> <tr><td>{field}-cell</td> <td>当前单元格数据插槽<br>使用该插槽将替换默认的数据<br>显示</td> <td>column<br>当前列配置参数<br>row<br>当前行所有数据<br>cell<br>当前单元格数据<br>$index<br>当前行索引</td> <td>row[field]</td></tr> <tr><td>{field}-cell-suffix</td> <td>列表单元格后缀</td> <td>column<br>当前列配置参数<br>row<br>当前行所有数据<br>cell<br>当前单元格数据<br>$index<br>当前行索引</td> <td>column.suffix</td></tr> <tr><td>{field}-header-prefix</td> <td>列表表头前缀</td> <td>column<br>当前列配置参数<br>$index<br>当前行索引</td> <td>column.headerPrefix</td></tr> <tr><td>{field}-header</td> <td>列表表头</td> <td>column<br>当前列配置参数<br>$index<br>当前行索引</td> <td>column.label</td></tr> <tr><td>{field}-header-suffix</td> <td>列表表头后缀</td> <td>column<br>当前列配置参数<br>$index<br>当前行索引</td> <td>column.headerSuffix</td></tr> <tr><td>pagination-left</td> <td>组件内嵌分页器左侧</td> <td>page<br>当前分页配置</td> <td>无</td></tr> <tr><td>pagination-right</td> <td>组件内嵌分页器左侧</td> <td>page<br>当前分页配置</td> <td>无</td></tr></tbody></table></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">9/7/2019, 11:55:45 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/enesys-new-edition-frontend-framework-docs/components/common-table/edit.html" class="prev">
+        列表编辑
+      </a></span> <span class="next"><a href="/enesys-new-edition-frontend-framework-docs/components/common-form/">
+        Common Form 通用表单
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/enesys-new-edition-frontend-framework-docs/assets/js/app.24852fbb.js" defer></script><script src="/enesys-new-edition-frontend-framework-docs/assets/js/2.022026a0.js" defer></script><script src="/enesys-new-edition-frontend-framework-docs/assets/js/26.72ed7931.js" defer></script>
+  </body>
+</html>
