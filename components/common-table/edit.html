@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>列表编辑 | 中后台系统前端开发框架</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" type="image/png" sizes="32x32" href="/enesys-new-edition-frontend-framework-docs/logo-icon.png">
+    <link rel="manifest" href="/enesys-new-edition-frontend-framework-docs/manifest.json">
+    <link rel="apple-touch-icon" href="/enesys-new-edition-frontend-framework-docs/icons/icon-192.png">
+    <meta name="description" content="">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/icon-144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/enesys-new-edition-frontend-framework-docs/assets/css/0.styles.b757222e.css" as="style"><link rel="preload" href="/enesys-new-edition-frontend-framework-docs/assets/js/app.c822b358.js" as="script"><link rel="preload" href="/enesys-new-edition-frontend-framework-docs/assets/js/2.252f71a9.js" as="script"><link rel="preload" href="/enesys-new-edition-frontend-framework-docs/assets/js/5.00b41a8c.js" as="script"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/10.54047c48.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/11.656c506d.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/12.25ebd4fa.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/13.c2b2d01e.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/14.ce9857a4.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/15.b8b8db49.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/16.3c433d7e.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/17.fbfabcbf.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/18.2c3d3c30.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/19.e0b3a8b9.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/20.b352c2d7.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/21.ed6d1ba1.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/22.38cacf42.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/23.20214d9d.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/24.87db0ba1.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/25.999196af.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/26.2eaaa9fb.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/27.be8c4b53.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/28.bc5d32b3.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/29.59815302.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/3.538dc425.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/30.eebe835b.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/31.8ade8557.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/32.65d35cea.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/33.d380f75e.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/34.07b84935.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/35.43535325.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/36.217595bc.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/37.bf34ccc7.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/4.7e546ee9.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/6.da8c5dfd.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/7.fac7fd2b.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/8.c939ba7c.js"><link rel="prefetch" href="/enesys-new-edition-frontend-framework-docs/assets/js/9.bde74e24.js">
+    <link rel="stylesheet" href="/enesys-new-edition-frontend-framework-docs/assets/css/0.styles.b757222e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/enesys-new-edition-frontend-framework-docs/" class="home-link router-link-active"><img src="/enesys-new-edition-frontend-framework-docs/logo-icon.png" alt="中后台系统前端开发框架" class="logo"> <span class="site-name can-hide">中后台系统前端开发框架</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/start/" class="nav-link">
+  起步
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组件" class="dropdown-title"><span class="title">组件</span> <span class="arrow down"></span></button> <button type="button" aria-label="组件" class="mobile-dropdown-title"><span class="title">组件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          容器组件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/page.html" class="nav-link">
+  Page
+</a></li><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/panel.html" class="nav-link">
+  Panel
+</a></li><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/panel-tabs.html" class="nav-link">
+  Panel Tabs
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据组件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/" class="nav-link router-link-active">
+  通用列表组件
+</a></li><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/common-form/" class="nav-link">
+  通用表单组件
+</a></li></ul></li><li class="dropdown-item"><h4>
+          辅助组件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/filter-bar.html" class="nav-link">
+  筛选条控件
+</a></li><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/action-toolbar.html" class="nav-link">
+  操作工具条
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="预设" class="dropdown-title"><span class="title">预设</span> <span class="arrow down"></span></button> <button type="button" aria-label="预设" class="mobile-dropdown-title"><span class="title">预设</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/enesys-new-edition-frontend-framework-docs/preset/helper-css.html" class="nav-link">
+  样式
+</a></li><li class="dropdown-item"><!----> <a href="/enesys-new-edition-frontend-framework-docs/preset/fields.html" class="nav-link">
+  常用字段
+</a></li></ul></div></div><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/formatter/" class="nav-link">
+  数据格式化
+</a></div><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/router/" class="nav-link">
+  路由
+</a></div><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/api/" class="nav-link">
+  接口
+</a></div><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/feedback/" class="nav-link">
+  反馈
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/start/" class="nav-link">
+  起步
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组件" class="dropdown-title"><span class="title">组件</span> <span class="arrow down"></span></button> <button type="button" aria-label="组件" class="mobile-dropdown-title"><span class="title">组件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          容器组件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/page.html" class="nav-link">
+  Page
+</a></li><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/panel.html" class="nav-link">
+  Panel
+</a></li><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/panel-tabs.html" class="nav-link">
+  Panel Tabs
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据组件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/" class="nav-link router-link-active">
+  通用列表组件
+</a></li><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/common-form/" class="nav-link">
+  通用表单组件
+</a></li></ul></li><li class="dropdown-item"><h4>
+          辅助组件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/filter-bar.html" class="nav-link">
+  筛选条控件
+</a></li><li class="dropdown-subitem"><a href="/enesys-new-edition-frontend-framework-docs/components/action-toolbar.html" class="nav-link">
+  操作工具条
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="预设" class="dropdown-title"><span class="title">预设</span> <span class="arrow down"></span></button> <button type="button" aria-label="预设" class="mobile-dropdown-title"><span class="title">预设</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/enesys-new-edition-frontend-framework-docs/preset/helper-css.html" class="nav-link">
+  样式
+</a></li><li class="dropdown-item"><!----> <a href="/enesys-new-edition-frontend-framework-docs/preset/fields.html" class="nav-link">
+  常用字段
+</a></li></ul></div></div><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/formatter/" class="nav-link">
+  数据格式化
+</a></div><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/router/" class="nav-link">
+  路由
+</a></div><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/api/" class="nav-link">
+  接口
+</a></div><div class="nav-item"><a href="/enesys-new-edition-frontend-framework-docs/feedback/" class="nav-link">
+  反馈
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Page</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Panel</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Panel Tabs</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>通用列表组件</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/" aria-current="page" class="sidebar-link">Common Table 通用列表</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/#如何引入" class="sidebar-link">如何引入</a></li><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/#使用示例" class="sidebar-link">使用示例</a></li><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/#属性" class="sidebar-link">属性</a></li><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/#事件" class="sidebar-link">事件</a></li><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/#方法" class="sidebar-link">方法</a></li><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/#page-设置" class="sidebar-link">page 设置</a></li><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/#tablesetting-设置" class="sidebar-link">tableSetting 设置</a></li></ul></li><li><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/columns.html" class="sidebar-link">字段配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/columns.html#预设列表字段" class="sidebar-link">预设列表字段</a></li><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/columns.html#字段-format-配置" class="sidebar-link">字段 format 配置</a></li><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/columns.html#行展开配置" class="sidebar-link">行展开配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/columns.html#customexpand-自定义展开项模板" class="sidebar-link">customExpand 自定义展开项模板</a></li></ul></li></ul></li><li><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/edit.html" aria-current="page" class="active sidebar-link">列表编辑</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/edit.html#示例" class="sidebar-link">示例</a></li><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/edit.html#属性" class="sidebar-link">属性</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/edit.html#更新模式" class="sidebar-link">更新模式</a></li><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/edit.html#新增模式" class="sidebar-link">新增模式</a></li><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/edit.html#作废模式" class="sidebar-link">作废模式</a></li></ul></li><li class="sidebar-sub-header"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/edit.html#事件" class="sidebar-link">事件</a></li></ul></li><li><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/slots.html" class="sidebar-link">列表插槽</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>通用表单组件</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>筛选条控件</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>操作工具条</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="列表编辑"><a href="#列表编辑" class="header-anchor">#</a> 列表编辑</h1> <p>在很多场景下，需要对列表的记录进行查询、更新、新增和删除操作。在大部分场景下，开发者可以通过 <code>列表</code> + <code>表单</code> 的方式解决这一需求。</p> <p>然而在某些情况下，直接对列表记录进行更新、新增和删除反而更优雅、方便，因此通用列表加入了编辑模块。通过简单的 <code>edit</code> 属性<a href="#%E5%B1%9E%E6%80%A7">配置</a>即可实现记录更新、新增和删除操作。由于不需要配置表单呈现和执行表单操作，页面编写会相对简单，页面结构更加精简。</p> <h2 id="示例"><a href="#示例" class="header-anchor">#</a> 示例</h2> <div class="language-html line-numbers-mode"><pre class="language-html"><code><span class="token comment">&lt;!-- 本例中通用列表省略了无关配置项 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>common-table</span>
+    <span class="token attr-name">:columns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>columns<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:list</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>data<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:edit</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>editSetting<span class="token punctuation">&quot;</span></span>
+  <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      columns<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          label<span class="token operator">:</span> <span class="token string">'ID'</span><span class="token punctuation">,</span>
+          field<span class="token operator">:</span> <span class="token string">'id'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+          label<span class="token operator">:</span> <span class="token string">'表具编号'</span><span class="token punctuation">,</span>
+          field<span class="token operator">:</span> <span class="token string">'meterNo'</span><span class="token punctuation">,</span>
+          sortable<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          sortBy<span class="token operator">:</span> <span class="token string">'meterNo'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+          label<span class="token operator">:</span> <span class="token string">'表具类型'</span><span class="token punctuation">,</span>
+          field<span class="token operator">:</span> <span class="token string">'meterType'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+          label<span class="token operator">:</span> <span class="token string">'表具型号'</span><span class="token punctuation">,</span>
+          field<span class="token operator">:</span> <span class="token string">'meterModel'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+          label<span class="token operator">:</span> <span class="token string">'安装日期'</span><span class="token punctuation">,</span>
+          field<span class="token operator">:</span> <span class="token string">'installDate'</span><span class="token punctuation">,</span>
+          format<span class="token operator">:</span> <span class="token punctuation">{</span>
+            type<span class="token operator">:</span> <span class="token string">'parseTime'</span><span class="token punctuation">,</span>
+            set<span class="token operator">:</span> <span class="token string">'{y}-{m}-{d}'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          align<span class="token operator">:</span> <span class="token string">'right'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+          label<span class="token operator">:</span> <span class="token string">'操作'</span><span class="token punctuation">,</span>
+          field<span class="token operator">:</span> <span class="token string">'operate'</span><span class="token punctuation">,</span>
+          align<span class="token operator">:</span> <span class="token string">'right'</span><span class="token punctuation">,</span>
+          width<span class="token operator">:</span> <span class="token string">'120'</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      data<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      editSetting<span class="token operator">:</span> <span class="token punctuation">{</span>
+        fields<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token comment">/** 
+           * 如果字段为纯输入字段，推荐此配置方式。
+           * 即，将该字段配置简化为字段名，在编辑表单中默认渲染为:
+           * {
+           *   label: '',
+           *   field: 'meterNo',
+           *   type: 'input',
+           *   value: ''
+           * }
+           * 其中:
+           * label 的值将自动从该列表的 columns 列字段配置中获取
+           * type 的值默认为 input
+           */</span>
+          <span class="token string">'meterNo'</span><span class="token punctuation">,</span>
+          <span class="token comment">// 下列字段的配置方式则与通用表单字段配置完全一致</span>
+          <span class="token punctuation">{</span>
+            label<span class="token operator">:</span> <span class="token string">'表具类型'</span><span class="token punctuation">,</span>
+            field<span class="token operator">:</span> <span class="token string">'meterType'</span><span class="token punctuation">,</span>
+            type<span class="token operator">:</span> <span class="token string">'select'</span><span class="token punctuation">,</span>
+            value<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+            rule<span class="token operator">:</span> <span class="token string">'required'</span><span class="token punctuation">,</span>
+            options<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+              label<span class="token operator">:</span> <span class="token string">'普表'</span><span class="token punctuation">,</span>
+              value<span class="token operator">:</span> <span class="token number">11</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+              label<span class="token operator">:</span> <span class="token string">'卡表'</span><span class="token punctuation">,</span>
+              value<span class="token operator">:</span> <span class="token number">12</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+              label<span class="token operator">:</span> <span class="token string">'远传表'</span><span class="token punctuation">,</span>
+              value<span class="token operator">:</span> <span class="token number">13</span>
+            <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            clearable<span class="token operator">:</span> <span class="token boolean">true</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+            label<span class="token operator">:</span> <span class="token string">'表具型号'</span><span class="token punctuation">,</span>
+            field<span class="token operator">:</span> <span class="token string">'meterModel'</span><span class="token punctuation">,</span>
+            type<span class="token operator">:</span> <span class="token string">'select'</span><span class="token punctuation">,</span>
+            value<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+            rule<span class="token operator">:</span> <span class="token string">'required'</span><span class="token punctuation">,</span>
+            options<span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">{</span>
+                label<span class="token operator">:</span> <span class="token string">'JK-2019'</span><span class="token punctuation">,</span>
+                value<span class="token operator">:</span> <span class="token string">'JK-2019'</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+                label<span class="token operator">:</span> <span class="token string">'JK-2018'</span><span class="token punctuation">,</span>
+                value<span class="token operator">:</span> <span class="token string">'JK-2018'</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+                label<span class="token operator">:</span> <span class="token string">'JK-2017'</span><span class="token punctuation">,</span>
+                value<span class="token operator">:</span> <span class="token string">'JK-2017'</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+                label<span class="token operator">:</span> <span class="token string">'JK-2016'</span><span class="token punctuation">,</span>
+                value<span class="token operator">:</span> <span class="token string">'JK-2016'</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            clearable<span class="token operator">:</span> <span class="token boolean">true</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+            label<span class="token operator">:</span> <span class="token string">'安装日期'</span><span class="token punctuation">,</span>
+            field<span class="token operator">:</span> <span class="token string">'installDate'</span><span class="token punctuation">,</span>
+            type<span class="token operator">:</span> <span class="token string">'datepicker'</span><span class="token punctuation">,</span>
+            value<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+            rule<span class="token operator">:</span> <span class="token string">'required'</span><span class="token punctuation">,</span>
+            valueFormat<span class="token operator">:</span> <span class="token string">'timestamp'</span><span class="token punctuation">,</span>
+            innerType<span class="token operator">:</span> <span class="token string">'date'</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token comment">// 更新模式配置</span>
+        update<span class="token operator">:</span> <span class="token punctuation">{</span>
+          edit1By1<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          api<span class="token operator">:</span> <span class="token punctuation">{</span>
+            url<span class="token operator">:</span> <span class="token string">'record-update'</span><span class="token punctuation">,</span>
+            method<span class="token operator">:</span> <span class="token string">'PUT'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token comment">// 更新模式下，编辑表单的表单模式配置</span>
+          formMode<span class="token operator">:</span> <span class="token punctuation">{</span>
+            type<span class="token operator">:</span> <span class="token string">'enable'</span><span class="token punctuation">,</span>
+            fields<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'meterType'</span><span class="token punctuation">,</span> <span class="token string">'meterModel'</span><span class="token punctuation">]</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token comment">// 新增模式配置</span>
+        create<span class="token operator">:</span> <span class="token punctuation">{</span>
+          add1By1<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          api<span class="token operator">:</span> <span class="token punctuation">{</span>
+            url<span class="token operator">:</span> <span class="token string">'record-create'</span><span class="token punctuation">,</span>
+            method<span class="token operator">:</span> <span class="token string">'POST'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token comment">// 新增模式下，编辑表单的表单模式配置</span>
+          formMode<span class="token operator">:</span> <span class="token punctuation">{</span>
+            type<span class="token operator">:</span> <span class="token string">'disable'</span><span class="token punctuation">,</span>
+            fields<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'meterNo'</span><span class="token punctuation">]</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token comment">// 编辑模式</span>
+        mode<span class="token operator">:</span> <span class="token string">'update'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br></div></div><h2 id="属性"><a href="#属性" class="header-anchor">#</a> 属性</h2> <table><thead><tr><th>属性名</th> <th>属性说明</th> <th>默认值</th></tr></thead> <tbody><tr><td>fields</td> <td>[Array] 字段列表，与通用表单的<a href="/enesys-new-edition-frontend-framework-docs/components/common-form/fields.html#fields-表单字段配置">字段配置</a>一致。<br>如果该字段为纯输入字段，则配置为字段名即可，详见上述示例中的注释。</td> <td>无</td></tr> <tr><td>mode</td> <td>[String] 编辑模式。列表编辑模块支持三种模式：<br>update - 记录更新模式<br>create - 记录新增模式<br>cancel - 记录作废（删除）模式</td> <td>update</td></tr> <tr><td>apiCheck</td> <td>[Object] 设置编辑模式如何判断接口调用成功，默认判断 response.status === 'success'</td> <td>{<br>  props: 'status',<br>  value: 'success'<br>}</td></tr> <tr><td>update</td> <td>[Object] 更新模式<a href="#%E6%9B%B4%E6%96%B0%E6%A8%A1%E5%BC%8F">配置</a></td> <td>无</td></tr> <tr><td>create</td> <td>[Object] 新增模式<a href="#%E6%96%B0%E5%A2%9E%E6%A8%A1%E5%BC%8F">配置</a></td> <td>无</td></tr> <tr><td>cancel</td> <td>[Object] 作废模式<a href="#%E4%BD%9C%E5%BA%9F%E6%A8%A1%E5%BC%8F">配置</a></td> <td>无</td></tr></tbody></table> <div class="custom-block tip"><p class="custom-block-title">编辑模式</p> <p>编辑模式用于切换更新、新增、作废三种视图界面。开发者可以动态的切换编辑模式，以在不同的需要时启用所需的编辑界面。</p></div> <h3 id="更新模式"><a href="#更新模式" class="header-anchor">#</a> 更新模式</h3> <p><img src="/enesys-new-edition-frontend-framework-docs/assets/img/table-edit-1.14c4bbdf.png" alt=""></p> <p>配置</p> <table><thead><tr><th>属性名</th> <th>属性说明</th> <th>默认值</th></tr></thead> <tbody><tr><td>edit1By1</td> <td>[Boolean] 是否启用逐条更新。<br>如果启用则在编辑模式界面显示上一条下一条切换按钮。</td> <td>false</td></tr> <tr><td>api</td> <td>[Object] 接口配置，请参考<a href="/enesys-new-edition-frontend-framework-docs/api/#创建一个接口方法">Api</a>配置</td> <td>无</td></tr> <tr><td>additionalParams</td> <td>[Object] 额外参数，保存时将与编辑的记录进行合并。<br>该参数将同时作用于新增模式的创建的记录。</td> <td>无</td></tr> <tr><td>formMode</td> <td>[Object] 表单模式。表示在更新模式下，编辑表单采用什么<a href="/enesys-new-edition-frontend-framework-docs/components/common-form/form-mode.html">表单模式</a>配置</td> <td>无</td></tr></tbody></table> <div class="custom-block tip"><p class="custom-block-title">逐条更新</p> <p>启用逐条更新时，如果使用者更改了编辑界面的表单内容，点击上一条下一条时将自动缓存更改。</p></div> <h3 id="新增模式"><a href="#新增模式" class="header-anchor">#</a> 新增模式</h3> <p><img src="/enesys-new-edition-frontend-framework-docs/assets/img/table-edit-2.1b71e777.png" alt="新增模式界面"></p> <p>配置</p> <table><thead><tr><th>属性名</th> <th>属性说明</th> <th>默认值</th></tr></thead> <tbody><tr><td>add1By1</td> <td>[Boolean] 是否启用连续新增。<br>如果启用，新增模式界面的连续新增选框将被勾选，同时显示继续按钮。</td> <td>false</td></tr> <tr><td>api</td> <td>[Object] 接口配置，请参考<a href="/enesys-new-edition-frontend-framework-docs/api/#创建一个接口方法">Api</a>配置。</td> <td>无</td></tr> <tr><td>columns</td> <td>[Array] 字段配置，与通用列表 <a href="/enesys-new-edition-frontend-framework-docs/components/common-table/columns.html">columns</a> 配置一致。</td> <td>无</td></tr> <tr><td>formMode</td> <td>[Object] 表单模式，表示在新增模式下，编辑表单采用什么<a href="/enesys-new-edition-frontend-framework-docs/components/common-form/form-mode.html">表单模式</a>配置</td> <td>无</td></tr></tbody></table> <div class="custom-block tip"><p class="custom-block-title">columns 配置</p> <p>启用连续新增时，表单下方将生成列表，将新增的数据展示在其中，该列表的字段配置将由表单配置和原列表自动生成。当新增界面的表单字段多于原列表或与原列表不一致时，此处 columns 字段，可用于补充原列表字段的不足。</p></div> <p><img src="/enesys-new-edition-frontend-framework-docs/assets/img/table-edit-3.fc6110b0.png" alt="连续新增"></p> <div class="custom-block tip"><p class="custom-block-title">连续新增</p> <p>启用连续新增时，新增的记录将展示在新增界面中表单的下方列表中。列表的最右侧一列自动插入一个删除按钮，用于删除该条记录。</p></div> <h3 id="作废模式"><a href="#作废模式" class="header-anchor">#</a> 作废模式</h3> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>该模式为隐式模式，无界面，仅包含一个操作确认弹窗。启用作废模式仅需要增加作废模式配置，并调用作废方法 <code>cancelRecord</code> 即可，参数为要作废记录在列表中的行索引。</p></div> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">// 作废列表中第3条记录</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>table<span class="token punctuation">.</span><span class="token function">cancelRecord</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>配置</p> <table><thead><tr><th>属性名</th> <th>属性说明</th> <th>默认值</th></tr></thead> <tbody><tr><td>api</td> <td>[Object] 接口配置，请参考<a href="/enesys-new-edition-frontend-framework-docs/api/#创建一个接口方法">Api</a>配置</td> <td>无</td></tr></tbody></table> <h2 id="事件"><a href="#事件" class="header-anchor">#</a> 事件</h2> <p>列表记录编辑、新增和作废后将抛出下列事件。</p> <table><thead><tr><th>事件名称</th> <th>事件说明</th> <th>参数</th></tr></thead> <tbody><tr><td>record-update</td> <td>编辑操作完成事件</td> <td>已编辑数据列表</td></tr> <tr><td>record-create</td> <td>新增操作完成事件</td> <td>已新增数据列表</td></tr> <tr><td>record-cancel</td> <td>作废操作完成事件</td> <td>已作废数据记录</td></tr></tbody></table></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">11/18/2021, 11:31:19 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/enesys-new-edition-frontend-framework-docs/components/common-table/columns.html" class="prev">
+        字段配置
+      </a></span> <span class="next"><a href="/enesys-new-edition-frontend-framework-docs/components/common-table/slots.html">
+        列表插槽
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/enesys-new-edition-frontend-framework-docs/assets/js/app.c822b358.js" defer></script><script src="/enesys-new-edition-frontend-framework-docs/assets/js/2.252f71a9.js" defer></script><script src="/enesys-new-edition-frontend-framework-docs/assets/js/5.00b41a8c.js" defer></script>
+  </body>
+</html>
